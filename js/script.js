@@ -13,12 +13,12 @@ function girar(){
   }else{
     Swal.fire({
       icon: 'success',
-      title: 'VUELVA PRONTO EL JUEGO TERMINO!!',
+      title: 'Chance completed',
       confirmButtonColor: '#3085d6',
-      confirmButtonText: 'Aceptar',
+      confirmButtonText: 'play again',
       allowOutsideClick: false
     }).then((result)=>{
-      if (result.value == true) {
+      if (result.value == true) { 
         giros = 0;
          document.querySelector('.elije').innerHTML = 'TU CORTESIA ES: ';
          document.querySelector('.contador').innerHTML = 'TURNOS: ' + giros;        
